@@ -23,7 +23,7 @@ def transcribe_batch():
         return
     
     print(f"Found {len(audio_files)} audio files to transcribe")
-    print("Using GPU acceleration with your RTX 3080 Ti")
+    print("Using GPU acceleration with Graphic Card")
     print("-" * 50)
     
     # Process each file

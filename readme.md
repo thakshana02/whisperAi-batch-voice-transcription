@@ -66,7 +66,7 @@ A high-performance batch transcription system powered by OpenAI's Whisper model 
 For direct Whisper usage:
 ```bash
 # Single file
-whisper "audio/your_file.wav" --model large --device cuda --output_dir transcripts
+whisper "audio/audio_file.wav" --model large --device cuda --output_dir transcripts
 
 # Batch processing
 whisper "audio/*.wav" --model large --device cuda --output_dir transcripts --language en
@@ -84,14 +84,14 @@ Edit `batch_transcribe.py` to modify:
 
 ```
 whisperAi-batch-voice-transcription/
-├── audio/                          # Place your audio files here
+├── audio/                          # Place audio files here
 │   ├── sampleAudio/               # Sample files (tracked in git)
-│   └── [your-audio-folders]/      # Your audio files (ignored by git)
+│   └── [audio-folders]/            # audio files (ignored by git)
 ├── transcripts/                    # Generated transcriptions
 │   ├── sampleTranscript/          # Sample outputs (tracked in git)
-│   └── [generated-files]/         # Your transcripts (ignored by git)
+│   └── [generated-files]/         # transcripts (ignored by git)
 ├── batch_transcribe.py            # Main batch processing script
-├── .gitignore                     # Protects your audio files
+├── .gitignore                     # Protects audio files
 └── README.md                      # This file
 ```
 
@@ -120,7 +120,7 @@ result = model.transcribe(audio_path, language="es")  # Spanish
 
 ## Privacy & Security
 
-- Audio files are processed locally on your machine
+- Audio files are processed locally on machine
 - No data is sent to external services
 - `.gitignore` configured to prevent accidental upload of audio files
 - Only sample files and code are tracked in version control
@@ -152,7 +152,7 @@ python -c "import torch; print(torch.cuda.is_available())"
 
 1. Fork the repository
 2. Create a feature branch
-3. Make your changes
+3. Make changes
 4. Test with sample audio files
 5. Submit a pull request
 
