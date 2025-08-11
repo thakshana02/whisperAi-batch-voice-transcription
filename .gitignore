@@ -1,0 +1,83 @@
+# Python virtual environment
+venv/
+env/
+.env
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+
+# Audio files (exclude all except sample)
+audio/*
+!audio/sampleAudio/
+!audio/sampleAudio/*
+
+# Transcripts (exclude all except sample)
+transcripts/*
+!transcripts/sampleTranscript/
+!transcripts/sampleTranscript/*
+
+# Whisper model cache (models are downloaded locally)
+~/.cache/whisper/
+.cache/
+*.pt
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+
+# Windows specific
+$RECYCLE.BIN/
+
+# Large files that shouldn't be in repo
+*.wav
+*.mp3
+*.mp4
+*.m4a
+*.flac
+*.aac
+*.wma
+*.ogg
+!audio/sampleAudio/*.wav
+!audio/sampleAudio/*.mp3
+!audio/sampleAudio/*.m4a
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# PyTorch and ML model files
+*.pth
+*.pkl
+*.joblib
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
